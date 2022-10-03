@@ -32,7 +32,7 @@ when 'update'
     puts "What's the new rating? (Type a number 0 to 4.)"
     rating = gets.chomp
     movies[title.to_sym] = rating.to_i
-    puts "#{title} has been updated with new rating of #{rating}."
+    movies[title.to_sym] = rating.to_i
   end
 when 'display'
   movies.each do |movie, rating|
